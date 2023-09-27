@@ -1,0 +1,37 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: #fff;
+  }
+
+  p {
+    font-size: 24px;
+    color: #666;
+  }
+
+  .home-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .home-link:hover {
+    background-color: #45a049;
+  }

@@ -1,0 +1,57 @@
+/* Global Styles */
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+
+.w3-top {
+    position: sticky;
+    top: 0;
+}
+
+.w3-bar {
+    background-color: black;
+    color: white;
+}
+
+.w3-bar a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.w3-bar a:hover {
+    background-color: #333;
+}
+
+.w3-dropdown-content a {
+    padding: 10px;
+}
+
+/* About Content Styles */
+
+.about-content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.about-content h2 {
+    color: #333;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-content a {
+    color: #333;
+}
+
+.about-content a:hover {
+    color: #777;
+    text-decoration: underline;
+}
