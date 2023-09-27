@@ -1,33 +1,10 @@
-const express = require("express")
-require("dotenv").config()
-const PORT = process.env.PORT || 3001
-const path = require("path")
-
-const app = express();
-app.use(express.json());
+const {app,PORT} = require('../config/config')
 
 
-app.use(express.static('public'));
-//set to use ejs
-app.set('view engine','ejs');
-
-app.get('/on', (req,res) => {
-  res.render('index');
-});
-
-app.get('/', (req,res) => {
-    res.render('main');
+const startApp = async () => {
+  app.listen(PORT, () => {
+          console.log(`Server running on port ${PORT}`);
   });
+};
 
-app.get('/about', (req,res) => {
-  res.render('about')
-
-});
-app.use((req,res,next) => {
-  res.status(404);
-  res.render('404')
-})
-
-app.listen(PORT, () => {
-	console.log(`server listenting on ${PORT}`);
-});
+startApp();
